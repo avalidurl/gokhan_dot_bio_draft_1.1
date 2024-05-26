@@ -1,3 +1,4 @@
+/* app/global.css */
 @import 'tailwindcss';
 
 ::selection {
@@ -35,7 +36,6 @@ html {
 
 .prose .anchor {
   @apply absolute invisible no-underline;
-
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -156,4 +156,28 @@ table {
 
 .solarized-hover:hover {
   color: #268bd2; /* Solarized blue */
+}
+
+/* New styles for justified paragraphs and email link */
+.justified-text p {
+  text-align: justify;
+}
+
+.bullet-paragraph {
+  position: relative;
+  padding-left: 2em; /* Adjust as needed for spacing */
+}
+
+.bullet-paragraph::before {
+  content: '☀️';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5em; /* Adjust size as needed */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.email-link {
+  color: blue; /* Adjust the color as needed */
+  text-decoration: underline;
 }
