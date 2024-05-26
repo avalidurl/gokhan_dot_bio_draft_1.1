@@ -181,3 +181,12 @@ table {
   color: blue; /* Adjust the color as needed */
   text-decoration: underline;
 }
+
+/* Apply hover effect to all links */
+a {
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #268bd2; /* Adjust color as needed */
+}
