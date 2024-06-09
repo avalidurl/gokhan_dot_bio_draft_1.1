@@ -5,8 +5,15 @@ const navItems = {
   '/': { name: 'home' },
   '/blog': { name: 'blog' },
   '/philosophy': { name: 'philosophy' },
-  '/bulletin': { name: 'bulletin' }
+  '/rss': { name: 'rss' }, // Included RSS in navItems
+  '/newsletter': { name: 'newsletter' } // Added newsletter as a navigation option
 };
+
+const additionalLinks = [
+  { href: 'http://eepurl.com/iRBPZ-', name: 'newsletter' }, // Newsletter URL included here
+  { href: 'https://icebreaker.xyz/gokhan', name: 'Socials' },
+  { href: 'https://www.farcaster.id/gokhan.eth', name: 'Farcaster' },
+];
 
 function ArrowIcon() {
   return (
@@ -17,30 +24,20 @@ function ArrowIcon() {
 }
 
 export function Navbar() {
-  const additionalLinks = [
-    { href: '/rss', name: 'rss' },
-    { href: 'https://icebreaker.xyz/gokhan', name: 'Socials' },
-    { href: 'https://www.farcaster.id/gokhan.eth', name: 'Farcaster' },
-  ];
-
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <nav className="flex flex-col items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative" id="nav">
           <div className="flex flex-row space-x-0 pr-10 mb-4">
-            {Object.entries(navItems).map(([path, { name, href }]) => {
-              // Check if the item has a custom external href
-              const finalHref = href || path;
-              return (
-                <Link
-                  key={path}
-                  href={finalHref}
-                  className="solarized-hover transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-                >
-                  {name}
-                </Link>
-              );
-            })}
+            {Object.entries(navItems).map(([path, { name }]) => (
+              <Link
+                key={path}
+                href={path}
+                className="solarized-hover transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+              >
+                {name}
+              </Link>
+            ))}
           </div>
           <ul className="font-sm flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
             {additionalLinks.map(({ href, name }) => (
