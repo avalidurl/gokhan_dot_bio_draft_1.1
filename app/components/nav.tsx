@@ -5,7 +5,7 @@ const navItems = {
   '/': { name: 'home' },
   '/blog': { name: 'blog' },
   '/philosophy': { name: 'philosophy' },
-  '/bulletin': { name: 'bulletin', href: 'http://eepurl.com/iRBPZ-' }
+  '/bulletin': { name: 'bulletin' }
 };
 
 function ArrowIcon() {
