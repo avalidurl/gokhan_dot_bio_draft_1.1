@@ -4,13 +4,12 @@ import '../global.css'; // Ensure this path is correct
 const navItems = {
   '/': { name: 'home' },
   '/blog': { name: 'blog' },
-  '/philosophy': { name: 'philosophy' },
-  '/rss': { name: 'rss' }, // Included RSS in navItems
-  '/newsletter': { name: 'newsletter' } // Added newsletter as a navigation option
+  '/rss': { name: 'rss' } // Included RSS in navItems
 };
 
 const additionalLinks = [
   { href: 'http://eepurl.com/iRBPZ-', name: 'newsletter' }, // Newsletter URL included here
+  { href: 'https://hypersub.withfabric.xyz/collection/philosophy-e8teejxdfy80?referrer=0x36de990133d36d7e3df9a820aa3ede5a2320de71', name: 'philosophy' }, // Philosophy URL included here
   { href: 'https://icebreaker.xyz/gokhan', name: 'Socials' },
   { href: 'https://www.farcaster.id/gokhan.eth', name: 'Farcaster' },
 ];
