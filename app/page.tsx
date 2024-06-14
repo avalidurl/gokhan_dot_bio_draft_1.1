@@ -8,6 +8,9 @@ export default function Page() {
         Gökhan Turhan | gokhan.eth
       </h1>
       <p className="mb-4 bullet-paragraph">
+        🌞 I mainly blog at <a href="https://paragraph.xyz/@gokhan" className="link">Paragraph</a> and <a href="https://gokhan.substack.com/" className="link">Substack</a>. I am actively using both <a href="https://x.com/0xgokhan" className="link">X</a> and <a href="https://warpcast.com/gokhan.eth" className="link">Farcaster</a>. Feel free to cold DM.
+      </p>
+      <p className="mb-4 bullet-paragraph">
         I'm Gökhan Turhan, and currently based in İstanbul, Türkiye. I am an independent researcher with a primary focus on open finance, open source, emergent governance mechanisms, and public goods funding infrastructures. Currently, I am researching proof-of-stake economics alongside the onchain order flow landscape in relation to intents and MEV—since I view these building blocks and sandboxes as culturally evolutionary towards a better understanding of how our present-future societies work. I am also intellectually invested in neurotech, artificial intelligence, privacy by design, idea markets, and dating markets.
       </p>
       <p className="mb-4 bullet-paragraph">
